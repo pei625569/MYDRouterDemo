@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>product</key>
+	<dict>
+		<key>isNative</key>
+		<true/>
+		<key>VCName</key>
+		<string>MYDViewController</string>
+		<key>VCParams</key>
+		<dict>
+			<key>goodsId</key>
+			<string></string>
+			<key>navititle</key>
+			<string>默认标题</string>
+		</dict>
+		<key>urlRouter</key>
+		<string>myd://product/product-details/:goodsId</string>
+		<key>urlREString</key>
+		<string>^myd://product/product-details/[a-zA-Z\-0-9\_]+$</string>
+	</dict>
+</dict>
+</plist>
