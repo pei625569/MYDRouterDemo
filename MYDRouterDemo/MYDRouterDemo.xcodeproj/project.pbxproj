@@ -21,6 +21,7 @@
 		40337A4C20514BAC00D816E4 /* MYDRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 40337A4520514BAB00D816E4 /* MYDRouterManager.m */; };
 		40337A4D20514BAC00D816E4 /* MYDWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40337A4620514BAB00D816E4 /* MYDWebViewController.m */; };
 		40337A4E20514BAC00D816E4 /* MYDMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 40337A4820514BAC00D816E4 /* MYDMainViewController.m */; };
+		40DF1D02205237690091B1F1 /* MYDModulePlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 40DF1D01205237690091B1F1 /* MYDModulePlist.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		40337A4620514BAB00D816E4 /* MYDWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDWebViewController.m; sourceTree = "<group>"; };
 		40337A4720514BAC00D816E4 /* MYDMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYDMainViewController.h; sourceTree = "<group>"; };
 		40337A4820514BAC00D816E4 /* MYDMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYDMainViewController.m; sourceTree = "<group>"; };
+		40DF1D01205237690091B1F1 /* MYDModulePlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MYDModulePlist.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,13 +121,14 @@
 		40337A0920514B7C00D816E4 /* MYDRouterDemo */ = {
 			isa = PBXGroup;
 			children = (
-				40337A4720514BAC00D816E4 /* MYDMainViewController.h */,
-				40337A4820514BAC00D816E4 /* MYDMainViewController.m */,
 				40337A3F20514BAB00D816E4 /* MYDRouter */,
 				40337A3D20514BAB00D816E4 /* MYDViewController.h */,
 				40337A3C20514BAB00D816E4 /* MYDViewController.m */,
 				40337A3E20514BAB00D816E4 /* MYDWebViewController.h */,
 				40337A4620514BAB00D816E4 /* MYDWebViewController.m */,
+				40337A4720514BAC00D816E4 /* MYDMainViewController.h */,
+				40337A4820514BAC00D816E4 /* MYDMainViewController.m */,
+				40DF1D01205237690091B1F1 /* MYDModulePlist.plist */,
 				40337A0A20514B7C00D816E4 /* AppDelegate.h */,
 				40337A0B20514B7C00D816E4 /* AppDelegate.m */,
 				40337A0D20514B7C00D816E4 /* ViewController.h */,
@@ -278,6 +281,7 @@
 			files = (
 				40337A1720514B7C00D816E4 /* LaunchScreen.storyboard in Resources */,
 				40337A1420514B7C00D816E4 /* Assets.xcassets in Resources */,
+				40DF1D02205237690091B1F1 /* MYDModulePlist.plist in Resources */,
 				40337A1220514B7C00D816E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

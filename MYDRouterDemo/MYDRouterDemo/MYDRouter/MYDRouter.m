@@ -8,6 +8,7 @@
 
 #import "MYDRouter.h"
 static NSString *specialCharacters = @"|/?&.";
+
 #import "MYDRouterFromURL.h"
 
 
@@ -36,7 +37,6 @@ static inline NSDictionary* myd_readModuleFromBoudle(){
 //    NSString* documenPath =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingFormat:@"/MYDModulePlist.plist"];
     
     NSString* path = [[NSBundle mainBundle]pathForResource:@"MYDModulePlist" ofType:@".plist"];
-    
     NSDictionary* routerDic = nil;
     routerDic = [NSDictionary dictionaryWithContentsOfFile:path];
     

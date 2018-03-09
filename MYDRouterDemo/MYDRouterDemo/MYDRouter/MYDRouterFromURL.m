@@ -20,7 +20,7 @@
 #warning 注意，在这里可以处理特殊的url，并直接return 一个页面字典，比如一级页面的啦什么的
     
     
-    NSString* url = [self removeUrlSchem:originalUrlString];
+    NSString* url = originalUrlString;//[self removeUrlSchem:originalUrlString];
     
     __block NSDictionary* routerDic = nil;
     
@@ -116,11 +116,15 @@
 //从router.plist文件中招待路由字典
 - (NSDictionary*)routerDictionaryFromFile{
     
-    NSString* documenPath =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingFormat:@"/MYDModulePlist.plist"];
-    
+//    NSString* documenPath =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingFormat:@"/MYDModulePlist.plist"];
+//    
+//    NSDictionary* routerDic = nil;
+//    
+//    routerDic = [NSDictionary dictionaryWithContentsOfFile:documenPath];
+
+    NSString* path = [[NSBundle mainBundle]pathForResource:@"MYDModulePlist" ofType:@".plist"];
     NSDictionary* routerDic = nil;
-    
-    routerDic = [NSDictionary dictionaryWithContentsOfFile:documenPath];
+    routerDic = [NSDictionary dictionaryWithContentsOfFile:path];
     
     return routerDic;
     

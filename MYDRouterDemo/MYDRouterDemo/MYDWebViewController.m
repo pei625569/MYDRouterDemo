@@ -26,6 +26,7 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.title = _linkUrl;
     NSURLRequest* request = [NSURLRequest requestWithURL:[NSURL URLWithString:_linkUrl]];
     [self.webView loadRequest:request];
 }
