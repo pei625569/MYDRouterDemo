@@ -34,7 +34,7 @@ static NSString *specialCharacters = @"|/?&.";
 //从本地plist文件读取路由表
 static inline NSDictionary* myd_readModuleFromBoudle(){
     
-//    NSString* documenPath =[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingFormat:@"/MYDModulePlist.plist"];
+//    NSString* documenPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject stringByAppendingFormat:@"/MYDModulePlist.plist"];
     
     NSString* path = [[NSBundle mainBundle]pathForResource:@"MYDModulePlist" ofType:@".plist"];
     NSDictionary* routerDic = nil;
